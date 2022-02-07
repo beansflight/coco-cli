@@ -1,6 +1,6 @@
 {
   "name": "coco-h5-cli",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "coco cli",
   "private": false,
   "bin": {
@@ -17,7 +17,9 @@
     "cli",
     "coco-h5"
   ],
-  "author": "muwoo",
+  "author": {
+    "name": "muwoo"
+  },
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
@@ -30,5 +32,7 @@
     "ora": "^5.3.0",
     "read-pkg": "^5.2.0",
     "shelljs": "^0.8.4"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "coco-h5-cli@1.0.0"
 }
