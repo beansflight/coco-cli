@@ -6,6 +6,9 @@
   "bin": {
     "coco": "./bin/index.js"
   },
+  "scripts": {
+    "debug": "node --inspect-brk=6666 "
+  },
   "files": [
     "bin",
     "command",

@@ -43,16 +43,13 @@ async function release() {
   const res = await inquirer.prompt(platformQues);
   const { env } = res;
   const mode = env.split(" ")[1];
-  // execSync(`npx vue-cli-service build ${mode ? `--mode ${mode}` : ""}`, {
-  //   stdio: "inherit",
-  // });
+  execSync(`npx vue-cli-service build ${mode ? `--mode ${mode}` : ""}`, {
+    stdio: "inherit",
+  });
 
   // 发布
   const baseApi = releaseAPIMap[mode];
   const templateConfig = require(`${process.cwd()}/coco.config.js`);
-  console.log("===========templateConfig:start");
-  console.log(templateConfig);
-  console.log("===========templateConfig:end");
   // 升级版本
   const spinner = ora("🗃 开始提交模板...").start();
   await upVersion();
